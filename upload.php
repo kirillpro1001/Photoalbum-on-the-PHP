@@ -41,7 +41,9 @@ if (!empty($_FILES['attachment'])) {
 	?>
 	<?=$error ?>
 <?php elseif (!empty($result)): ?>
-	<?=$result ?>
+	<?=$result?>
+	<br>
+	<a href="index.php">Вернуться на главную страницу</a>
 <?php endif; ?>
 	<form action="upload.php" method="post" enctype="multipart/form-data">
 		<input type="file" name="attachment">
